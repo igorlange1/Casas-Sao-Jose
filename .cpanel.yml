@@ -1,9 +1,9 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=$HOME/public_html/
-    - /bin/cp -R api css images js *.html metadata.json README.md $DEPLOYPATH
-    - /bin/cp .htaccess $DEPLOYPATH
+    - export DEPLOYPATH=/home/$USER/public_html/
+    - /bin/cp -R * $DEPLOYPATH
+    # Proteção de arquivos sensíveis após o deploy
     - /bin/chmod 755 $DEPLOYPATH/api
     - /bin/chmod 644 $DEPLOYPATH/api/*.php
     - /bin/chmod 644 $DEPLOYPATH/.htaccess

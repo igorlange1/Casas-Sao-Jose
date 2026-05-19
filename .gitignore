@@ -1,20 +1,21 @@
-# Logs
+# Logs e Dados Temporários
 api/error_log.log
 api/rate_limits.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Dependency directories
+# Diretórios de Dependências
 node_modules/
+dist/
 
-# OS metadata
+# Metadados de Sistema
 .DS_Store
 Thumbs.db
 
-# Preview specific
-server.ts
-package.json
-package-lock.json
-.env.example
-INSTRUCOES_CPANEL.txt
+# Configurações Locais
+.env
+.env.local
+.env.*.local
+
+# Nota: package.json e server.ts agora estão inclusos para permitir desenvolvimento local via GitHub.
